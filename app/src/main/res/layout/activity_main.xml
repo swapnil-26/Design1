@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="#efefef">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+        android:id="@+id/card_view_top"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        card_view:cardCornerRadius="0dp"
+        android:layout_above="@+id/card_view"
+        android:layout_alignLeft="@+id/card_view"
+        android:layout_alignStart="@+id/card_view">
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/imageButton"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/a"
+                    android:clickable="true"
+                    android:background="#FFFFFFFF" />
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/imageButton2"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/p"
+                    android:clickable="true"
+                    android:background="#FFFFFFFF" />
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/imageButton3"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/q"
+                    android:clickable="true"
+                    android:background="#FFFFFFFF" />
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="0dp"
+        android:layout_above="@+id/card_view2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#3cba54"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:textSize="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="SMS Announcer"
+            android:id="@+id/textView1"
+            android:layout_gravity="center_horizontal" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        card_view:cardCornerRadius="0dp"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/card_view3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#f4c20d"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="TTS Settings"
+            android:textSize="25dp"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        card_view:cardCornerRadius="0dp"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/card_view4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#db3236"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Speech to Text"
+            android:textSize="25dp"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        card_view:cardCornerRadius="0dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#4885ed"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Deactivate SMS Service"
+            android:textSize="25dp"
+            android:id="@+id/textView4"
+            android:layout_gravity="center_horizontal" />
+    </android.support.v7.widget.CardView>
+        </LinearLayout>
+</ScrollView>
+</RelativeLayout>
